@@ -1,7 +1,7 @@
 # Panel logowania ver.1
 
 
-Panel posiada klase która tworzy sesje jeżeli nie znajdzie rzadnej, jest link wyloguj usuniecie zawartości zmiennych sesji.
+Panel posiada klase która tworzy sesje jeżeli nie znajdzie zadnej, jest link wyloguj usuniecie zawartości zmiennych sesji.
 
 ## Użycie
 
