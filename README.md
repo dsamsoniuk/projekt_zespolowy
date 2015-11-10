@@ -1,2 +1,5 @@
-# projekt_zespolowy
-projekt zespolwy, dokumentacja
+# Projekt_zespolowy
+
+* Dokumentacja
+* Moduły
+- Panel logowania
