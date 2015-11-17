@@ -1,5 +1,6 @@
 # Projekt_zespolowy
 
-* Dokumentacja
+* Dokumentacja (ProjektZespoowy.odt)
 * Moduły
-- Panel logowania
+ Panel logowania
+ Panel rejestracja
