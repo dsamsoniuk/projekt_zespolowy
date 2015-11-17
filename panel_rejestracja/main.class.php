@@ -27,7 +27,6 @@ class main {
 	protected $user_name;
 	protected $password;
 	protected $server_db;
-	protected $test = "czesc";
 
 
 
