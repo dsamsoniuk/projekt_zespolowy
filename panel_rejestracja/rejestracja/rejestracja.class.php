@@ -116,7 +116,7 @@ class rejestracja extends main {
 	
 	private function utworz_konto(){
 		
-	$this->stworz_foldery_uzytkownika();
+	if($this->poziom_uprawnien == "fotograf")$this->stworz_foldery_uzytkownika();
 	
 	$this->connect_sql();
 	
