@@ -8,6 +8,7 @@
   * sprawdz_zapisz_w_bazie   -  sprawdza czy lgin i email sa w bazie 
   * utworz_konto             -  tworzy komunikat i tworzy rekord w bazie danych
   * sprawdz_poprawnosc_pol   -  sprawdza poprawnosc slow np login, imie
+  * stworz_foldery_uzytkownika  tworzy folder glowny i podfoldery uzytkownika
   ******************************************************************************/
  
 /********************************************************************************
@@ -43,7 +44,7 @@ class rejestracja extends main {
 	/*********************************************************
 	 * Sa tutaj zabezpieczane dane z POST i dalej przesylane 
 	 * do sprawdzenia pod katem slownictwa
-	 * i zwraca true gdy wszystko jest zgodne
+	 * i zwraca true gdy wszystko jest poprawne
 	 **********************************************************/
 	 
 	public function dane_rejestracyjne($login, $haslo, $imie, $nazwisko, $adres, $telefon, $kod_pocztowy, $e_mail, $opis, $typ_konta){
@@ -78,7 +79,9 @@ class rejestracja extends main {
 	 
 	
 	public function sprawdz_zapisz_w_bazie(){
-		
+	
+	
+	
 	$this->connect_sql();
 	
 	$zapytanie_login = "SELECT login FROM ".$this->typ_konta." WHERE login='".$this->login."'";
@@ -102,7 +105,7 @@ class rejestracja extends main {
 	
 	
 	}
-	
+
 	
 	
 	
@@ -112,6 +115,9 @@ class rejestracja extends main {
 	****************************************************************************/
 	
 	private function utworz_konto(){
+		
+	$this->stworz_foldery_uzytkownika();
+	
 	$this->connect_sql();
 	
 	$sql = "INSERT INTO ".$this->typ_konta." VALUES(NULL,'".$this->login."','".$this->szyfruj($this->haslo)."','".$this->imie."','".$this->nazwisko."','".$this->telefon."','".$this->adres."','".$this->kod_pocztowy."','".$this->e_mail."','".$this->opis."')";
@@ -122,8 +128,27 @@ class rejestracja extends main {
 	return true;
 	
 	}
-
 	
+	
+	
+	/******************************************************************************
+	 * Metoda tworzy foldery dla uzytkownika
+	 * folder glowny z nazwa loginu oraz podfoldery 
+	 ******************************************************************************/	
+	
+
+	private function stworz_foldery_uzytkownika(){
+		
+		if(mkdir('konta_uzytkownikow/'.$this->login, 0775))echo '';
+		else echo 'nie udalo sie stworzyc folderu uzytkownika';
+		
+		if(mkdir('konta_uzytkownikow/'.$this->login.'/portfolio', 0775))echo '';
+		else echo 'nie udalo sie stworzyc folderu portfolio';
+		
+		if(mkdir('konta_uzytkownikow/'.$this->login.'/poczta', 0775))echo '';
+		else echo 'nie udalo sie stworzyc folderu poczta';
+		
+	}
 	
 	/******************************************************************************
 	 * Sprawdzane jest tutaj slownictwo czy nie ma wulgaryzmow w
