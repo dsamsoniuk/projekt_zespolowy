@@ -1,6 +1,9 @@
 # Projekt_zespolowy
 
 * Dokumentacja (ProjektZespoowy.odt)
-* Moduły
- Panel logowania
- Panel rejestracja
+
+### Dostepne moduly :
+* Moduł logowania
+* Modul rejestracji
+* Modul wyswietlanej listy fotografow
+* modul zamowienia
