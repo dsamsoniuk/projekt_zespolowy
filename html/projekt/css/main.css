@@ -1,0 +1,174 @@
+.carousel-inner > .item > img{
+    image-resolution: snap;
+    margin-top: -5%;
+    margin-bottom: -5%;
+    width: 100vw;
+}
+.carousel-control.left, 
+.carousel-control.right {
+    
+}
+.carousel-control {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.carousel {
+    width: 100%;
+}
+
+body {
+    padding-top: 50px; 
+}
+
+legend {
+    padding: 0;
+    margin-left: 10px;
+}
+
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+current-page.font {
+    color: dodgerblue;
+}
+
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall
+{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
+
+.modal.carousel {
+    position: absolute;
+}
+
+#fotograf{
+    font-weight: bold;
+}
+.fotograf-bg{
+    background-color: #2E2E2E;
+    color: #2E9AFE;
+    border-radius: 5px;
+}
+.wrapper-circle {
+    display: inline-block;
+    padding: 10px;
+}
+.wrapper-circle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.size {
+    width: 100px;
+    height: 100px;
+}
+.paragraph{
+    text-align: justify;
+}
+.column2{
+    height: 500px;
+}
+.navbar{
+    background-color: black;
+    font-weight: bold;
+}
+.nazwa-fotograf{
+    font-weight: bold;
+}
+.calendar{
+    padding-top: 50px;
+}
+.center {
+    text-align:center;
+}
+
+.center form {
+    display:inline-block;
+}
+
+#rcorners{
+    border-radius: 0px 0px 15px 15px;
+    background: #2E2E2E;
+    padding: 20px; 
+    width: 100%;
+    height: 150px;
+}

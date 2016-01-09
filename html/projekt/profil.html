@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pl">
+    
+    <head>
+        <title>Projekt zespołowy UG</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+            <!-- Bootstrap -->
+            <link href="css/bootstrap.min.css" rel="stylesheet">
+            <!-- Custom CSS -->
+            <link href="css/main.css" rel="stylesheet">
+
+            <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+              <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+            <![endif]-->
+    </head>
+    
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Strona Główna</a>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right nav-pills">
+                    <li>
+                        <a href="kontakt.html">Kontakt</a>
+                    </li>
+                    <li class="active">
+                        <a href="portfolia.html">Fotografowie</a>
+                    </li>                    
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Zaloguj się <b class="caret"></b></a>
+                        <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="logowanie">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="exampleInputEmail2">Email</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="exampleInputPassword2">Hasło</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Hasło" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-success btn-block">Zaloguj się</button>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#rejestracja">Zarejestruj się</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="">
+                            </div>
+                            <button type="submit" class="btn btn-default">Szukaj</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+            
+        <!-- /.container -->
+    </nav>
+    <!-- Navbar koniec -->
+        
+        
+        <!-- Page Content -->
+        <!-- Opis fotografa -->
+        <div class="container">
+            <div class="row">
+                <legend class="text-left header">Super Hiper Foto</legend>
+                <div class="row-fluid">
+                    <div class="col-lg-2 col-md-2 col-sm-2 column2 fotograf-bg">
+                        <!--Sidebar content-->
+                        <div class="wrapper-circle size" align="center">
+                            <img src="http://fotonomia.pl/wp-content/uploads/2015/05/00-2.jpg" class="img-circle size" alt=""/>
+                        </div>
+                        <h4 class="nazwa-fotograf">Super Hiper Foto</h4>
+                        <p>Gdańsk</p>
+                    </div>
+                
+                    <div class="col-lg-10 col-md-8 col-sm-8 paragraph column2">
+                    <!--Body content-->
+                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam. Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus. Sed vel lectus. Ut sagittis, ipsum dolor quam.</p>
+                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam. Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus. Sed vel lectus. Ut sagittis, ipsum dolor quam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- /Opis Fotografa --!>
+
+        <!-- Oferta -->
+        <div class="container">
+            <table class = "table">
+                <caption>Oferta</caption>
+   
+                <thead>
+                    <tr>
+                        <th>Nazwa</th>
+                        <th>Opis</th>
+                        <th>Cena</th>
+                    </tr>
+                </thead>
+   
+                <tbody>
+                    <tr>
+                        <td id="nazwa">Pakiet FULL</td>
+                        <td id="opis">Fotografia przygotowań, błogosławieństwa, ceremonii, wesela do końca oczepin oraz plener w innym dniu.</td>
+                        <td id="cena">3500 zł</td>
+                    </tr>
+      
+                    <tr>
+                        <td>Pakiet MINIMUM</td>
+                        <td>Fotografia ceremonii oraz wesela do pierwszego tańca.</td>
+                        <td>1500 zł</td>
+                    </tr>
+                </tbody>
+	
+            </table>
+        </div>
+        <!-- /Oferta -->
+        
+        <!-- Galeria -->
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <legend class="text-left header">Galeria</legend>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="#galeria" class="thumbnail" data-toggle="modal" data-slide-to="0">
+                        <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="#galeria" class="thumbnail" data-toggle="modal" data-slide-to="1">
+                        <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="#galeria" class="thumbnail" data-toggle="modal" data-slide-to="2">
+                        <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="#galeria" class="thumbnail" data-toggle="modal" data-slide-to="3">
+                        <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="#galeria" class="thumbnail" data-toggle="modal" data-slide-to="4">
+                        <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-5.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="#galeria" class="thumbnail" data-toggle="modal" data-slide-to="5">
+                        <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-6.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="#galeria" class="thumbnail" data-toggle="modal" data-slide-to="6">
+                        <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-7.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="#galeria" class="thumbnail" data-toggle="modal" data-slide-to="7">
+                        <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-8.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="#galeria" class="thumbnail" data-toggle="modal" data-slide-to="8">
+                        <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-9.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="#galeria" class="thumbnail" data-toggle="modal" data-slide-to="9">
+                        <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-10.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="#galeria" class="thumbnail" data-toggle="modal" data-slide-to="10">
+                        <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-11.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a href="#galeria" class="thumbnail" data-toggle="modal" data-slide-to="11">
+                        <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-12.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <hr>
+            
+            
+            <!-- Modal Galerii -->
+            <div class="modal carousel" id="galeria" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <ol class="carousel-indicators">
+                                <li data-target="#galeria" data-slide-to="0" class="active"></li>
+                                <li data-target="#galeria" data-slide-to="1"></li>
+                                <li data-target="#galeria" data-slide-to="2"></li>
+                                <li data-target="#galeria" data-slide-to="3"></li>
+                                <li data-target="#galeria" data-slide-to="4"></li>
+                                <li data-target="#galeria" data-slide-to="5"></li>
+                                <li data-target="#galeria" data-slide-to="6"></li>
+                                <li data-target="#galeria" data-slide-to="7"></li>
+                                <li data-target="#galeria" data-slide-to="8"></li>
+                                <li data-target="#galeria" data-slide-to="9"></li>
+                                <li data-target="#galeria" data-slide-to="10"></li>
+                                <li data-target="#galeria" data-slide-to="11"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-1.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-2.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-3.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-4.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-5.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-6.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-7.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-8.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-9.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-10.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-11.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-12.jpg">
+                                </div>
+                            </div><!-- /.carousel-inner -->
+                            <a class="left carousel-control" href="#galeria" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#galeria" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div><!-- /.modal-body -->
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+        </div>
+        <!-- /Galeria -->
+        
+        <!-- Formularz kontaktowy i kalendarz -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="well well-sm">
+                        <form class="form-horizontal" method="post" data-toggle="validator">
+                            <fieldset>
+                                <legend class="text-left header">Napisz do mnie</legend>
+
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <input id="fname" name="name" type="text" placeholder="Imię" class="form-control" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <input id="email" name="email" type="email" placeholder="Email" class="form-control" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <textarea class="form-control" id="message" name="message" placeholder="Wiadomość..." rows="7" required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-12 text-right">
+                                        <button type="submit" class="btn btn-primary btn-lg">Wyślij</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <!-- formularz kontaktowy -->
+                <div class="col=md-4 calendar">
+                    <iframe src="https://calendar.google.com/calendar/embed?title=Sprawd%C5%BA%20wolne%20terminy&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=250&amp;wkst=2&amp;hl=pl&amp;bgcolor=%23FFFFFF&amp;src=pjnaliqptrj8hfebt4cqagjkeg%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Europe%2FWarsaw" style="border-width:0" width="350" height="250" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- /Formularz kontaktowy -->
+        
+        <!-- Modal rejestracja -->
+        <div id="rejestracja" class="modal fade" role="dialog" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="panel-title">Zarejestruj się</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <form class="form" role="form" method="post" action="zarejestruj" accept-charset="UTF-8" id="rejestracja">
+                                    <div class="form-group">
+                                        <label class="sr-only">Imię</label>
+                                        <input type="text" class="form-control" id="imie" placeholder="Imię" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only">Nazwisko</label>
+                                        <input type="text" class="form-control" id="nazwisko" placeholder="Nazwisko" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only">e-mail</label>
+                                        <input type="email" class="form-control" id="email" placeholder="e-mail" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only">Hasło</label>
+                                        <input type="password" class="form-control" id="haslo" placeholder="Hasło" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only">Potwierdź hasło</label>
+                                        <input type="password" class="form-control" id="haslo2" placeholder="Potwierdź hasło" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-success btn-block">Zarejestruj</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#zaloguj" data-dismiss="modal">Zaloguj się</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal rejestracja - koniec -->
+
+        <!-- Modal logowanie -->
+        <div id="zaloguj" class="modal fade" role="dialog" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="panel-title">Zaloguj się</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login">
+                                    <div class="form-group">
+                                        <label class="sr-only">e-mail</label>
+                                        <input type="email" class="form-control" id="email" placeholder="e-mail" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only">Hasło</label>
+                                        <input type="password" class="form-control" id="haslo" placeholder="Hasło" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-success btn-block">Zaloguj się</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#rejestracja"  data-dismiss="modal">Zarejestruj się</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal logowanie - koniec -->
+        
+    <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2015 Przemysław Tomasik, Damian Samsoniuk, Patryk Brzozowski, Ewa Gonera-Szwarc</p>
+                    <p>Projekt Zespołowy UG</p>
+                </div>
+            </div>
+        </footer>
+
+           
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
