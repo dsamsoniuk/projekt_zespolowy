@@ -37,7 +37,7 @@
                     <li>
                         <a href="kontakt.html">Kontakt</a>
                     </li>
-                   <li class="active">
+                   <li>
                         <a href="portfolia.html">Fotografowie</a>
                     </li>
                     
@@ -93,239 +93,100 @@
         </div>
         <!-- /.container -->
     </nav>
-    <!-- Navbar koniec -->
-        
-        
-        <!-- Page Content -->
- 
-        
-        <!-- Galeria -->
-        
+        <!-- Navbar koniec -->
         
         <div class="container">
-            <!-- stara wyszukiwarka
-            <div class="row">
-                <div class="col-lg-12">
-                    <legend class="text-left header">Szukaj fotografa</legend>
+            <br><br>
+            <div class="panel panel-primary">
+                <div class="panel-heading">Zlecenia</div>
+                    <div class="panel-body">
+                        <p>Tutaj możesz przeglądać swoje zamówienia i ich aktualny status.</p>
+                    </div>
+                                                                                     
+                    <div class="table-responsive">          
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Data</th>
+                                    <th>Fotograf</th>
+                                    <th>Pakiet</th>
+                                    <th>Cena</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td id="data">13-01-2016</td>
+                                    <td id="foto">Sokole Oko</td>
+                                    <td id="pakiet">2</td>
+                                    <td id="cena">3000</td>
+                                    <td id="status"><span class="label label-info">w toku</span></td>
+                                    <td><input type="button" class="btn btn-danger btn-xs confirm-delete" value="Anuluj" data-id="delete" data-toggle="modal" data-target="#delete-modal"></td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>2</td>
+                                    <td id="data">17-12-2015</td>
+                                    <td id="foto">Zimny Drań</td>
+                                    <td id="pakiet">2</td>
+                                    <td id="cena">3000</td>
+                                    <td id="status"><span class="label label-warning">złożone</span></td>
+                                    <td><input type="button" class="btn btn-danger btn-xs confirm-delete" value="Anuluj" data-id="delete" data-toggle="modal" data-target="#delete-modal"></td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>3</td>
+                                    <td id="data">05-11-2015</td>
+                                    <td id="foto">Okiem nie-bokiem</td>
+                                    <td id="pakiet">1</td>
+                                    <td id="cena">1000</td>
+                                    <td id="status"><span class="label label-success">zrealizowane</span></td>
+                                    <td><input type="button" class="btn btn-danger btn-xs confirm-delete" value="Anuluj" data-id="delete" data-toggle="modal" data-target="#delete-modal"></td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>3</td>
+                                    <td id="data">25-12-2014</td>
+                                    <td id="foto">1000 słów</td>
+                                    <td id="pakiet">4</td>
+                                    <td id="cena">4500</td>
+                                    <td id="status"><span class="label label-danger">anulowane</span></td>
+                                    <td><input type="button" class="btn btn-danger btn-xs confirm-delete" value="Anuluj" data-id="delete" data-toggle="modal" data-target="#delete-modal"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="center" id="rcorners">
-                    <form class="form-inline">
-                        <div class="form-group">
-                            <label class="sr-only" for="name">Nazwa</label>
-                            <input type="text" class="form-control" id="name" placeholder="Nazwa">
-                        </div>
-                        <div class="form-group">
-                            <label class="sr-only" for="city">Miescowość</label>
-                            <input type="text" class="form-control" id="city" placeholder="Miejscowość">
-                        </div>
-                        <div class="form-group">
-                            <label class="sr-only" for="district">Województwo</label>
-                            <input type="text" class="form-control" id="district" placeholder="Województwo">
-                        </div>
-                        <div class="form-group">
-                            <label class="sr-only" for="bottom-price">Cena od</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="bottom-price" placeholder="Cena od">
-                                <div class="input-group-addon">PLN</div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="sr-only" for="top-price">Cena do</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="top-price" placeholder="Cena do">
-                                <div class="input-group-addon">PLN</div>
-                            </div>
-                        </div>
-                    <button type="submit" class="btn btn-primary">Szukaj</button>
-                </form>
-                </div>
-            </div>
-            <-->
             
-            <!-- Nowa wyszukiwarka -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <legend class="text-left header">Szukaj fotografa</legend>
+        <!-- Modal usuń -->
+        <div id="delete-modal" class="modal fade" role="dialog" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <p>Czy na pewno chcesz usunąć to zamówienie?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" id="yes" class="btn btn-success" data-dismiss="modal">Tak</button>
+                        <button type="button" id="no" class="btn btn-danger" data-dismiss="modal">Nie</button>
+                    </div>
+
                 </div>
-                <div class="center" id="rcorners">
-                    <div class="col-lg-6">
-                        <div class="input-group">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Szukaj!</button>
-                            </span>
-                            <input type="text" class="form-control" placeholder="Wpisz nazwę">
-                        </div><!-- /input-group -->
-                    </div><!-- /.col-lg-6 -->
-                    <div class="col-lg-6">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Wpisz miejscowość">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button">Szukaj!</button>
-                                </span>
-                        </div><!-- /input-group -->
-                    </div><!-- /.col-lg-6 -->
-                </div><!-- /.row -->
+
             </div>
-            <!-- /nowa wyszukiwarka -->
-
-            <!-- Lista fotografow -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <legend class="text-left header">Wybierz fotografa</legend>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <div class = "thumbnail">
-                        <a href="profil.html">
-                            <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-1.jpg" alt="">
-                            <div class = "caption">
-                                <h4>Super Hiper Foto</h4>
-                                <p>Gdańsk</p>
-                            </div>
-                        </a>
-                    </div>                    
-                </div>
-                    
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <div class = "thumbnail">
-                        <a href="profil.html">
-                            <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-2.jpg" alt="">
-                            <div class = "caption">
-                                <h4>Foto SUPCIO</h4>
-                                <p>Sopot</p>
-                            </div>
-                        </a>
-                    </div>                    
-                </div>
-                           
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <div class = "thumbnail">
-                        <a href="profil.html">
-                            <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-3.jpg" alt="">
-                            <div class = "caption">
-                                <h4>Miro-Firo</h4>
-                                <p>Trąbki Wielkie</p>
-                            </div>
-                        </a>
-                    </div>                    
-                </div>
-                
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <div class = "thumbnail">
-                        <a href="profil.html">
-                            <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-4.jpg" alt="">
-                            <div class = "caption">
-                                <h4>Poza Obiektywem</h4>
-                                <p>Zaciszne Kąty</p>
-                            </div>
-                        </a>
-                    </div>                    
-                </div>
-                
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <div class = "thumbnail">
-                        <a href="profil.html">
-                            <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-5.jpg" alt="">
-                            <div class = "caption">
-                                <h4>Dola Anatola</h4>
-                                <p>Zawiejeizamiecie</p>
-                            </div>
-                        </a>
-                    </div>                    
-                </div>
-                
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <div class = "thumbnail">
-                        <a href="profil.html">
-                            <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-6.jpg" alt="">
-                            <div class = "caption">
-                                <h4>Dunder Świśnie</h4>
-                                <p>Gdynia</p>
-                            </div>
-                        </a>
-                    </div>                    
-                </div>
-                
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <div class = "thumbnail">
-                        <a href="profil.html">
-                            <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-7.jpg" alt="">
-                            <div class = "caption">
-                                <h4>Bede Grał w Gre</h4>
-                                <p>Tomb Raider</p>
-                            </div>
-                        </a>
-                    </div>                    
-                </div>
-                
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <div class = "thumbnail">
-                        <a href="profil.html">
-                            <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-8.jpg" alt="">
-                            <div class = "caption">
-                                <h4>Ale Ale Ale Fajne Foto</h4>
-                                <p>Gdańsk</p>
-                            </div>
-                        </a>
-                    </div>                    
-                </div>
-                
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <div class = "thumbnail">
-                        <a href="profil.html">
-                            <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-9.jpg" alt="">
-                            <div class = "caption">
-                                <h4>Cwane Oko</h4>
-                                <p>Borowikowo Małe</p>
-                            </div>
-                        </a>
-                    </div>                    
-                </div>
-                
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <div class = "thumbnail">
-                        <a href="profil.html">
-                            <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-10.jpg" alt="">
-                            <div class = "caption">
-                                <h4>Zza horyzontu</h4>
-                                <p>Kolbudy</p>
-                            </div>
-                        </a>
-                    </div>                    
-                </div>
-                
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <div class = "thumbnail">
-                        <a href="profil.html">
-                            <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-11.jpg" alt="">
-                            <div class = "caption">
-                                <h4>Osa Koło Nosa</h4>
-                                <p>Lębork</p>
-                            </div>
-                        </a>
-                    </div>                    
-                </div>
-                
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <div class = "thumbnail">
-                        <a href="profil.html">
-                            <img class="img-responsive" src="http://fotonomia.pl/wp-content/uploads/2015/04/siesta-12.jpg" alt="">
-                            <div class = "caption">
-                                <h4>Foto Ziutek</h4>
-                                <p>Pszczółki</p>
-                            </div>
-                        </a>
-                    </div>                    
-                </div>
-                
-            </div>
-
-            <hr>
-            
         </div>
-            <!-- /Galeria -->
-    
-            <!-- Modal rejestracja -->
+        <!-- Modal usuń - koniec -->
+        
+        <!-- Modal rejestracja -->
         <div id="rejestracja" class="modal fade" role="dialog" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -416,9 +277,7 @@
             </div>
         </div>
         <!-- Modal logowanie - koniec -->
-        
-        
-    <!-- Footer -->
+                <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
@@ -428,7 +287,11 @@
             </div>
         </footer>
 
-           
+   </div>
+   
+
+
+        
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://code.jquery.com/jquery.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
