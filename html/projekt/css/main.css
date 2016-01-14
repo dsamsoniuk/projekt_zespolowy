@@ -1,3 +1,12 @@
+html,body{
+    height: 100vh;
+}
+
+body {
+    padding-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .carousel-inner > .item > img{
     image-resolution: snap;
     margin-top: -5%;
@@ -14,10 +23,6 @@
 }
 .carousel {
     width: 100%;
-}
-
-body {
-    padding-top: 50px; 
 }
 
 legend {
@@ -175,4 +180,37 @@ current-page.font {
 .main{
     color: white !important;
     font-weight: bold;
+}
+footer {
+    background: #2E2E2E;
+    padding: 0px 0 0 0;
+    border-radius: 25px 25px 0px 0px;
+    color: azure;
+    position: relative;
+    margin-top: -70px; /* negative value of footer height */
+    height: 75px;
+    clear:both;
+ }
+#wrap {
+  min-height: 100%;
+}
+
+#mainx {
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+#right {
+    text-align: right;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#left {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+h6{
+    font-style: oblique;
+    color:darkgray;
 }
